@@ -246,6 +246,7 @@ header {
 }
 .slick-track {
 	display: flex;
+	max-height: 324px;
 }
 .whatwedo__slider__slide__card__text__number {
 	padding-right: 10px;
