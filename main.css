@@ -151,10 +151,10 @@ header {
 }
 
 .video {
-	padding: 75px 0;
+	padding: 100px 0;
 	height: 800px;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .video__title {
