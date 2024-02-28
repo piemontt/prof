@@ -228,18 +228,16 @@ header {
 .whatwedo__slider__slide__card {
 	display: flex;
 	flex-direction: column;
-	padding: 0 30px;
-
 }
 
 .whatwedo__slider__slide__card__text {
 	margin-bottom: 15px;
 	font-size: 18px;
+	display: flex;
 }
 
-.slick-active:nth-child(2) {
-	border-left: 1px solid #bababa;
-	border-right: 1px solid #bababa;
+.whatwedo__slider__slide {
+	padding: 20px 30px;
 }
 
 .slick-current + .whatwedo__slider__slide  {
@@ -248,4 +246,15 @@ header {
 }
 .slick-track {
 	display: flex;
+}
+.whatwedo__slider__slide__card__text__number {
+	padding-right: 10px;
+	margin-left: -3px;
+	color: #4B8AB2;
+	font-size: 18px;
+}
+.tz-ready {
+	padding: 150px  0;
+	background-image: url(src/images/tz_bg.png);
+	background-position: center;
 }
