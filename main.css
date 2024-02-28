@@ -257,6 +257,7 @@ header {
 	padding: 150px  0;
 	background-image: url(src/images/tz_bg.png);
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .tz-ready__zapros-card {
@@ -265,7 +266,7 @@ header {
 	padding: 30px;
 }
 
-.tz-ready__zapros-card__title {
+.tz-ready__zapros-card__title, .tz-ready__question-card__title {
 	font-size: 24px;
 	font-family: 'Roboto Condensed', sans-serif;
 	line-height: 28px;
@@ -286,5 +287,38 @@ header {
 	background: #4B8AB2;
 	border-radius: 30px;
 	padding: 16px 53px;
+	white-space: nowrap;
+}
+
+.tz-ready__question-card { 
+	padding: 30px 30px 30px 50px;
+	border-left: 1px solid #bababa;
+}
+
+.tz-ready__question-card__title {
+ 	color: #ffffff;
+ 	white-space: nowrap;
+ 	margin-bottom: 30px;
+}
+.tz-ready__question-card__item {
+	display: flex;
+	column-gap: 15px;
+	margin-top: 15px;
+}
+.tz-ready__question-card__item__number {
+	font-size: 18px;
+	background: #4B8AB2;
+	border-radius: 20px;
+	height: 32px;
+	width: 32px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 31px;
+	flex-grow: 0;
+}
+.tz-ready__question-card__item__text {
+	font-size: 18px;
+	line-height: 22px;
+	color:  #ffffff;
 	white-space: nowrap;
 }
