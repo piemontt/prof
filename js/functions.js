@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-	$('.bgndVideo').matchHeight();
+	$('.video__card').matchHeight();
 	console.log('success')
 	jQuery(function(){
-		jQuery("#backvid").YTPlayer({
+		jQuery("#bgndVideo").YTPlayer({
 			showControls: 0,
 		});
 	});
