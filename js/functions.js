@@ -1,6 +1,8 @@
 $( document ).ready(function() {
 	console.log('success')
 	jQuery(function(){
-		jQuery("#backvid").YTPlayer();
+		jQuery("#backvid").YTPlayer({
+			showControls: 0,
+		});
 	});
 });
