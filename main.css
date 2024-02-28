@@ -65,6 +65,11 @@ a {
 	color: #393A41;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header {
 	padding-top: 30px;
 }
@@ -190,6 +195,7 @@ header {
 	font-size: 58px;
 	color: #222222;
 	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
 }
 .title_white {
 	color: #ffffff;
@@ -197,4 +203,21 @@ header {
 
 .whatwedo {
 	padding: 100px 0;
+}
+
+
+.slick-arrow {
+	position: absolute;
+	top: -80px;
+}
+
+.whatwedo__slider {
+	margin-top: 50px;
+}
+
+.slick-prev {
+	right: 50px;
+}
+.slick-next {
+	right: 0;
 }
