@@ -184,3 +184,16 @@ header {
 	color: #ffffff;
 	margin-top: 20px;
 }
+
+.title {
+	font-size: 58px;
+	color: #222222;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.title_white {
+	color: #ffffff;
+}
+
+.whatwedo {
+	padding: 150px 0;
+}
