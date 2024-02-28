@@ -287,8 +287,9 @@ header {
 	color: #ffffff;
 	background: #4B8AB2;
 	border-radius: 30px;
-	padding: 16px 53px;
+	padding: 16px 45px;
 	white-space: nowrap;
+	text-align: center;
 }
 
 .tz-ready__question-card { 
