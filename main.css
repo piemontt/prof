@@ -149,8 +149,37 @@ header {
 .header__menu__item a:hover {
 	color: #4B8AB2;
 }
+
+.video {
+	padding: 75px 0;
+	height: 800px;
+	display: flex;
+	align-items: center;
+}
+
 .video__title {
 	font-size: 74px;
 	line-height: 74px;
 	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.video__card {
+	background: #22222285;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.video__card__title {
+	font-size: 48px;
+	line-height: 56.25px;	
+	color: #ffffff;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.video__card__desc {
+	font-size: 18px;
+	line-height: 22px;
+	color: #ffffff;
+	margin-top: 20px;
 }
