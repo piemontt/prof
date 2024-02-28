@@ -149,9 +149,8 @@ header {
 .header__menu__item a:hover {
 	color: #4B8AB2;
 }
-.player {
-	padding: 75px 0;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+.video__title {
+	font-size: 74px;
+	line-height: 74px;
+	color: #fff;
 }
