@@ -151,7 +151,7 @@ header {
 }
 
 .video {
-	padding: 100px 0;
+	padding: 150px 0;
 	height: 800px;
 	display: flex;
 	align-items: flex-end;
@@ -162,6 +162,7 @@ header {
 	line-height: 74px;
 	color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
 }
 
 .video__card {
