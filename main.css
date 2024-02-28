@@ -156,7 +156,7 @@ header {
 }
 
 .video {
-	padding: 150px 0;
+	padding: 150px 0 100px;
 	height: 800px;
 	display: flex;
 	align-items: flex-end;
@@ -205,10 +205,13 @@ header {
 	padding: 100px 0;
 }
 
-
 .slick-arrow {
 	position: absolute;
 	top: -80px;
+	cursor: pointer;
+}
+.slick-arrow:hover {
+	opacity: .5;
 }
 
 .whatwedo__slider {
@@ -216,8 +219,33 @@ header {
 }
 
 .slick-prev {
-	right: 50px;
+	right: 60px;
 }
 .slick-next {
-	right: 0;
+	right: 10px;
+}
+
+.whatwedo__slider__slide__card {
+	display: flex;
+	flex-direction: column;
+	padding: 0 30px;
+
+}
+
+.whatwedo__slider__slide__card__text {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.slick-active:nth-child(2) {
+	border-left: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+}
+
+.slick-current + .whatwedo__slider__slide  {
+	border-left: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+}
+.slick-track {
+	display: flex;
 }
