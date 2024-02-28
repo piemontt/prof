@@ -258,3 +258,33 @@ header {
 	background-image: url(src/images/tz_bg.png);
 	background-position: center;
 }
+
+.tz-ready__zapros-card {
+	background: #ffffff;
+	border-radius: 15px;
+	padding: 30px;
+}
+
+.tz-ready__zapros-card__title {
+	font-size: 24px;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 28px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.tz-ready__zapros-card__text {
+	font-size: 17px;
+	line-height: 18px;
+	margin: 30px 0;
+}
+
+.button {
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	background: #4B8AB2;
+	border-radius: 30px;
+	padding: 16px 53px;
+	white-space: nowrap;
+}
