@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('src/fonts/RobotoCondensed-Medium.woff2') format('woff2'),
+        url('src/fonts/RobotoCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('src/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('src/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('src/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('src/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('src/fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('src/fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('src/fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('src/fonts/RobotoCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('src/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('src/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body,
+html {
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.2s;
+	color: #393A41;
+}
+
+header {
+	padding-top: 30px;
+}
+
+.header__logo-area {
+	display: flex;
+	flex-flow: row nowrap;
+	column-gap: 10px;
+
+}
+
+.header__logo-area__text {
+	border-left: 1px solid #BABABA;
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 14.06px;
+	color: #989AA6;
+}
+
+.header__contacts-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.header__contacts-wrapper__socials {
+	display: flex;
+	column-gap: 8px;
+	justify-content: space-between;
+}
+
+.header__phone {
+	font-size: 14px;
+	line-height: 16.41px;
+	white-space: nowrap;
+}
+.header__phone::before {
+	content: url(src/images/phone.svg);
+	padding-right: 8px;
+}
+
+.header__email {
+	font-size: 14px;
+	line-height: 16.41px;
+	white-space: nowrap;
+}
+.header__email::before {
+	content: url(src/images/mail.svg);
+	padding-right: 8px;
+}
+.header__buttons-wrapper {
+	display: flex;
+	column-gap: 10px;
+}
+
+.header__button {
+	border: 1px solid #0F1330;
+	border-radius: 30px;
+	padding: 7px 18px;
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 16.41px;
+	cursor: pointer;
+}
+
+.header__button_black {
+	background: #0F1330;
+	color: #ffffff;
+}
+.header__menu {
+	display: flex;
+	list-style: none;
+	column-gap: 25px;
+	padding-left: 0;
+}
+.header__menu__item {
+	font-size: 16px;
+	line-height: 18.75px;
+	color: #0F1330;
+}
+.header__menu__item a:hover {
+	color: #4B8AB2;
+}
