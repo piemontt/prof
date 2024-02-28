@@ -168,6 +168,7 @@ header {
 	background: #22222285;
 	padding: 20px;
 	border-radius: 15px;
+	min-height: 179px;
 }
 
 .video__card__title {
