@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 	$('.video__card').matchHeight();
+/*	$('.tz-not__card__title').matchHeight();*/
 	$('.whatwedo__slider').slick({
 		slidesToShow: 3,
 		autoPlay: true,
