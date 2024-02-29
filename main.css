@@ -253,7 +253,10 @@ header {
 	padding: 16px 45px;
 	white-space: nowrap;
 	text-align: center;
+<<<<<<< HEAD
 	cursor: pointer;
+=======
+>>>>>>> 55b7619d20b0000ce4316b168878ffbf00d4b25a
 }
 .question-card {
 	padding: 30px 30px 30px 50px;
