@@ -134,6 +134,21 @@
 	}
 }
 @media (max-width: 768px) {
+	.header__menu {
+		top: 0;
+		right: -100vw;
+		position: absolute;
+		height: 100%;
+		width: 100vw;
+		background: var(--white);
+		z-index: 100;
+		padding: 20px;
+		transition: all 0.5s;
+	}
+	.header__menu li{
+		font-size: 26px;
+		line-height: 44px;
+	}
 	.header__logo-area__text {
 		display: none;
 	}
@@ -147,10 +162,99 @@
 		padding: 10px 0;
 		box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, 0.08);
 	}
+	.active {
+		display: block!important;
+		right: 0!important;
+	}
 }
 
 @media (max-width: 576px) {
-	
+	.header__buttons-wrapper .header__button:nth-child(2) {
+		margin-top: 15px;
+	}
+	.header__buttons-wrapper .header__button {
+		width: 100%;
+	}
+	.header__phone-email-wrap {
+		margin-top: 15px;
+	}
+	.video__title, .video__card__title {
+		font-size: 30px;
+		line-height: 48px;
+	}
+	.video {
+		padding: 75px 0 75px;
+	}
+	.video__card {
+		min-height: unset;
+	}
+	.whatwedo   .slick-track {
+		max-height: 235px;
+	}
+	.whatwedo__slider {
+		margin-top: 10px;
+	}
+	.title, .title_white {
+		font-size: 30px;
+		line-height: 48px;	
+	}
+	.tz-not, .whatwedo, .tz-ready, .press-form, .consultation, .consumers, .power, .big-manufacture, .blog, .contacts, footer {
+		padding: 25px 0;
+	}
+	.question-card {
+		border-left: unset;
+	}
+	.press-form__cards-wrapper {
+		grid-template-columns: 100%;
+		grid-template-rows: 280px 280px 280px 280px 280px ;
+		gap: 15px;
+		grid-template-areas:
+		"a" 
+		"b"
+		"c"
+		"d"
+		"e";
+	}
+	.question-card {
+		padding: 20px;
+	}
+	.consultation__messenger__logos {
+		flex-direction: column;
+		row-gap: 5px;
+	}
+	.quality {
+		padding: 25px 0;
+	}
+	.power .title {
+		margin-bottom: 30px;
+	}
+	.big-manufacture__pics-wrapper {
+
+	}
+	.big-manufacture__video-prew-wrapper::before {
+		top: 66px;
+		left: 137px;
+	}
+	.big-manufacture__pics-wrapper {
+		flex-flow: row wrap;
+	}
+	.big-manufacture__title_slider {
+		margin: 50px 0 40px;
+	}
+	.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
+		top: 70px;
+		left: 125px;
+	}
+	.blog__subtitle {
+		margin: 25px 0;
+	}
+	.blog__slider .slick-list {
+		height: 350px;
+	}
+	.big-manufacture__desc {
+		margin-bottom: 25px;
+	}
+
 }
 
 @media (max-width: 470px) {
