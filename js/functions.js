@@ -87,6 +87,7 @@ $( document ).ready(function() {
 
 	$('.burger-button').on("click", function(){
 		$('.header__menu,.burger-button').toggleClass('active');
+		$('header').toggleClass('header-padding');
 	});
 
 	if ($(window).width() < 576) {

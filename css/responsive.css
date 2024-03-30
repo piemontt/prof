@@ -219,9 +219,6 @@
 	.big-manufacture__desc {
 		margin-bottom: 25px;
 	}
-	.whatwedo .slick-list {
-		height: 360px;
-	}
 	.slick-initialized .slick-slide {
 		display: flex;
 		justify-content: center;

@@ -1243,7 +1243,6 @@ footer {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	top: 11px;
 }
 
 .active .burger-button__line:nth-child(2) {
@@ -1254,7 +1253,11 @@ footer {
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+	top: -12px;
 }
 .blog .slick-track {
 	max-height: unset;
+}
+.header-padding {
+	padding: 11.5px 0;
 }
