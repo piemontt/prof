@@ -30,14 +30,6 @@
 	.blog__slider__slide__card {
 		padding: 10px;
 	}
-	.big-manufacture__video-prew-wrapper::before {
-		top: 154px;
-		left: 286px;
-	}
-	.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
-		top: 82px;
-		left: 145px;
-	}
 	.question-card__title {
 		white-space: unset;
 	}
@@ -62,14 +54,6 @@
 	.power__card {
 		font-size: 16px;
 		padding: 20px;
-	}
-	.big-manufacture__video-prew-wrapper::before {
-		top: 127px;
-		left: 244px;
-	}
-	.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
-		top: 62px;
-		left: 118px;
 	}
 	.footer-text {
 		font-size: 16px;
@@ -105,9 +89,9 @@
 		font-size: 12px;
 	}
 	.whatwedo__slider__slide__card__text {
-    	font-size: 13px;
-  	}
-  	.slick-track {
+		font-size: 13px;
+	}
+	.slick-track {
 		max-height: 213px; /* ??? */
 	}
 	.press-form__card__title:not(.press-form__card:first-child.press-form__card__title) {
@@ -123,14 +107,6 @@
 	}
 	.question-card__item {
 		align-items: center;
-	}
-	.big-manufacture__video-prew-wrapper::before {
-		top: 160px;
-		left: 310px;
-	}
-	.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
-		top: 35px;
-		left: 77px;
 	}
 }
 @media (max-width: 768px) {
@@ -218,10 +194,6 @@
 	.question-card {
 		padding: 20px;
 	}
-	.consultation__messenger__logos {
-		flex-direction: column;
-		row-gap: 5px;
-	}
 	.quality {
 		padding: 25px 0;
 	}
@@ -231,19 +203,12 @@
 	.big-manufacture__pics-wrapper {
 
 	}
-	.big-manufacture__video-prew-wrapper::before {
-		top: 66px;
-		left: 137px;
-	}
+
 	.big-manufacture__pics-wrapper {
 		flex-flow: row wrap;
 	}
 	.big-manufacture__title_slider {
 		margin: 50px 0 40px;
-	}
-	.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
-		top: 70px;
-		left: 125px;
 	}
 	.blog__subtitle {
 		margin: 25px 0;
@@ -254,9 +219,39 @@
 	.big-manufacture__desc {
 		margin-bottom: 25px;
 	}
+	.whatwedo .slick-list {
+		height: 360px;
+	}
+	.slick-initialized .slick-slide {
+		display: flex;
+		justify-content: center;
+	}
+	.consumers__slider__slide {
+		padding: 0;
+		border-right: none;
+	}
+	.contacts__card {
+		position: unset;
+	}
+	.contacts__card__phone-wrapper {
+		font-size: 14px;
+	}
+	.contacts__card {
+		padding: 45px 0px;
+	}
+	.contacts {
+		padding: 0;
+	}
+	.contacts__card {
+    	padding: 10px 0px;
+	}
 
 }
 
 @media (max-width: 470px) {
+	.consultation__messenger__logos {
+		flex-direction: column;
+		row-gap: 5px;
+	}
 
 }

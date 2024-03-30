@@ -24,8 +24,6 @@ $( document ).ready(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
-				centerMode: true,
-				centerPadding: '50px',
 			}
 		}
 			],

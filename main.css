@@ -870,14 +870,23 @@ header {
 .big-manufacture__video-prew-wrapper::before {
 	content: url(src/images/play.svg);
 	position: absolute;
-	top: 185px;
-	left: 330px;
 	z-index: 15;
 	padding: 20px 20px 15px 25px;
 	background: #F2F2F2;
 	border: 1px solid #F2F2F2;
 	border-radius: 50px;
 	background: #FFF6;
+	width: 65px;
+	height: 65px;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
+
 }
 
 .big-manufacture__video-prew-wrapper:hover::before {
@@ -915,14 +924,6 @@ header {
 
 .big-manufacture .slick-arrow {
 	top: -62px;
-}
-
-.big-manufacture .slick-next {}
-
-.big-manufacture__slider .big-manufacture__video-prew-wrapper::before {
-	top: 90px;
-	left: 170px;
-	padding: 12px 13px 11px 20px
 }
 
 .big-manufacture__slider .big-manufacture__video-prew-wrapper:hover::before {
@@ -1253,4 +1254,7 @@ footer {
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+.blog .slick-track {
+	max-height: unset;
 }
