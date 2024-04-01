@@ -70,6 +70,9 @@
 	.header__contacts-wrapper {
 		justify-content: center;
 	}
+	.power .title {
+	margin-bottom: 75px;
+	}
 }
 @media (max-width: 992px) {
 	.video__title {
@@ -142,6 +145,64 @@
 		display: block!important;
 		right: 0!important;
 	}
+	.question-card {
+		border-left: unset;
+	}
+	.tz-not__card__title {
+		font-size: 17px;
+		line-height: 24px;
+	}
+	.tz-not__card__text {
+		font-size: 16px;
+	}
+	.press-form__card {
+		min-height: unset;
+	}
+	.press-form__cards-wrapper {
+		display: grid;
+		grid-template-columns: 160px 160px 160px;
+		grid-template-rows: 250px 250px;
+		gap: 15px;
+	}
+	.press-form__card {
+		padding: 15px;
+		font-size: 18px;
+	}
+	.title {
+		font-size: 44px;
+	}
+	.blog__slider__slide__card__title {
+		font-size: 16px;
+	}
+	.blog__slider__slide__card__date {
+		font-size: 14px;
+		line-height: 17px;
+		margin: 10px 0;
+	}
+	.contacts__card {
+		position: unset;
+	}
+	.contacts__card__phone-wrapper {
+		font-size: 14px;
+	}
+	.contacts__card {
+		padding: 45px 0px;
+	}
+	.contacts {
+		padding: 0;
+	}
+	.contacts__card {
+    	padding: 30px 0px;
+	}
+	.contacts__card br { 
+		display: none;
+	}
+	.blog__subtitle {
+		margin: 35px 0;
+	}
+	.video {
+		padding: 100px 0 100px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -165,7 +226,7 @@
 		min-height: unset;
 	}
 	.whatwedo   .slick-track {
-		max-height: 235px;
+		max-height: unset;
 	}
 	.whatwedo__slider {
 		margin-top: 10px;
@@ -176,9 +237,6 @@
 	}
 	.tz-not, .whatwedo, .tz-ready, .press-form, .consultation, .consumers, .power, .big-manufacture, .blog, .contacts, footer {
 		padding: 25px 0;
-	}
-	.question-card {
-		border-left: unset;
 	}
 	.press-form__cards-wrapper {
 		grid-template-columns: 100%;
@@ -201,10 +259,6 @@
 		margin-bottom: 30px;
 	}
 	.big-manufacture__pics-wrapper {
-
-	}
-
-	.big-manufacture__pics-wrapper {
 		flex-flow: row wrap;
 	}
 	.big-manufacture__title_slider {
@@ -212,9 +266,6 @@
 	}
 	.blog__subtitle {
 		margin: 25px 0;
-	}
-	.blog__slider .slick-list {
-		height: 350px;
 	}
 	.big-manufacture__desc {
 		margin-bottom: 25px;
@@ -227,22 +278,23 @@
 		padding: 0;
 		border-right: none;
 	}
-	.contacts__card {
-		position: unset;
+	.slick-current + .whatwedo__slider__slide {
+		border: none;
 	}
-	.contacts__card__phone-wrapper {
+	 .slick-track {
+		max-height: unset;
+	}
+	.blog__slider .slick-list {
+		height: unset;
+	}
+	.blog__slider__slide__card__title {
+		font-size: 16px;
+	}
+	.blog__slider__slide__card__date {
 		font-size: 14px;
+		line-height: 17px;
+		margin: 5px 0;
 	}
-	.contacts__card {
-		padding: 45px 0px;
-	}
-	.contacts {
-		padding: 0;
-	}
-	.contacts__card {
-    	padding: 10px 0px;
-	}
-
 }
 
 @media (max-width: 470px) {

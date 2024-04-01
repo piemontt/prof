@@ -58,7 +58,7 @@
 							<div class="header__button">
 								Пригласить в тендер
 							</div>
-							<div class="header__button header__button_black">
+							<div data-bs-toggle="modal" data-bs-target="#callback" class="header__button header__button_black">
 								Заполнить лист запроса
 							</div>
 						</div>
@@ -223,7 +223,7 @@
 											<br>
 											<br>КП вышлем в течение 2–3 дней
 										</div>
-										<div class="button">
+										<div class="button" data-bs-toggle="modal" data-bs-target="#callback">
 											Заполнить лист запроса
 										</div>
 									</div>
@@ -311,7 +311,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="press-form">
+			<section class="press-form d-md-block d-flex flex-column align-items-center">
 				<div class="container">
 					<h1 class="title">
 						Производим пресс-формы<br> любой сложности
@@ -615,7 +615,7 @@
 					<h1 class="title title_white">Получите консультацию специалиста<br> по техническому заданию бесплатно</h1>
 					<div class="row mt-5">
 						<div class="col-md-8 col-12">
-							<div class="consultation__form me-4">
+							<div class="consultation__form me-md-4">
 								<div class="consultation__form__title">
 									Заполните форму
 								</div>
@@ -705,7 +705,7 @@
 					</div>
 					<div class="blog__subtitle">
 						Публикуем актуальные события,
-						<br> мероприятия и дполнительную информацию
+						<br> мероприятия и дополнительную информацию
 					</div>
 					<div class="row">
 						<div class="col-12">
@@ -766,7 +766,7 @@
 						</div>
 					</div>
 					<div class="contacts">
-						<div class="container position-relative position-relative d-flex d-sm-block flex-column-reverse">
+						<div class="container position-relative position-relative d-flex d-md-block flex-column-reverse">
 							<div class="contacts__map-wrapper">
 								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46849a32b6065c31d685f1f73c3d2f86358831f24268272f4d1d346c43851039&amp;source=constructor"
 								width="100%" height="627" frameborder="0"></iframe>
@@ -787,10 +787,10 @@
 										</div>
 									</div>
 									<div class="col-12 col-md-6">
-										<div class="contacts__card__subtitle text-sm-end">
+										<div class="contacts__card__subtitle text-md-end">
 											режим работы
 										</div>
-										<div class="contacts__card__text text-sm-end">
+										<div class="contacts__card__text text-md-end">
 											Пн-Пт 8:00-17:00
 										</div>
 									</div>
@@ -836,24 +836,24 @@
 		</main>
 		<footer>
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 col-12 d-flex flex-column align-items-center d-sm-block">
+				<div class="row ">
+					<div class="col-md-3 col-12 d-flex flex-column align-items-center d-md-block">
 						<div class="footer__logo-wrapper">
 							<a href="/">
 								<img src="src/images/footer_logo.svg" alt="">
 							</a>
 						</div>
-						<a href="policy.html" class="footer-text footer-text_grey d-block mt-3 mt-sm-5">
+						<a href="policy.html" class="footer-text footer-text_grey d-block mt-3 mt-lg-5">
 							Политика конфиденциальности
 						</a>
 						<a href="policy.html" class="footer-text footer-text_grey d-block mt-3">
 							Договор оферты
 						</a>
-						<div class="footer-text footer-text_grey mt-3 mt-sm-5">
+						<div class="footer-text footer-text_grey mt-3 mt-lg-5">
 							©Все права защищены
 						</div>
 					</div>
-					<div class="col-3 d-sm-block d-none">
+					<div class="col-3 d-md-block d-none">
 						<div class="footer-title">
 							Kлиентам
 						</div>
@@ -874,7 +874,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-3 d-sm-block d-none">
+					<div class="col-3 d-md-block d-none">
 						<div class="footer-title">
 							Услуги
 						</div>
@@ -895,7 +895,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-3 d-sm-block d-none">
+					<div class="col-3 d-md-block d-none">
 						<div class="footer-title">
 							Контакты
 						</div>
@@ -914,6 +914,80 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal fade" id="callback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content p-4">
+					<div class="modal-header border-0">
+						<h2 class="modal__title" id="exampleModalLabel">лист запроса</h2>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body pb-1">
+						<form>
+							<div class="mb-3">
+								<label for="name" class="modal__subtitle">Введите ваше имя:</label>
+								<input type="text" class="form-control mt-1" id="name">
+							</div>
+							<div class="mb-3">
+								<label for="phone" class="modal__subtitle">Введите ваш телефон:</label>
+								<input type="text" class="form-control mt-1" id="phone">
+							</div>
+							<div class="mb-3">
+								<label for="email" class="modal__subtitle">Введите вашу почту:</label>
+								<input type="text" class="form-control mt-1" id="email">
+							</div>
+							<div class="mb-3">
+								<label for="material" class="modal__subtitle">Укажите материал изделия:</label>
+								<input type="text" class="form-control mt-1" id="material">
+							</div>
+							<div class="mb-3">
+								<label for="system" class="modal__subtitle">Укажите материал изделия:</label>
+								<select class="form-select" id="system" required>
+									<option selected value="">ХК</option>
+									<option value="">ЖК</option>
+									<option value="">МХК</option>
+									<option value="">НТВ</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="rezhim" class="modal__subtitle">Укажите режим работы пресс-формы:</label>
+								<select class="form-select" id="rezhim" required>
+									<option selected value="">Автомат</option>
+									<option value="">Механика</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="stoykost" class="modal__subtitle">Укажите стойкость пресс-формы, число смыканий:</label>
+								<input type="text" class="form-control mt-1" id="stoykost">
+							</div>
+							<div class="mb-3">
+								<label for="poverhnost" class="modal__subtitle">Укажите видовую поверхность изделия:</label>
+								<input type="text" class="form-control mt-1" id="poverhnost">
+							</div>
+							<div class="mb-3">
+								<label for="dannie" class="modal__subtitle">Укажите исходные данные изделия:</label>
+								<select class="form-select" id="dannie" required>
+									<option selected value="">Мат. модель</option>
+									<option value="">Модель</option>
+								</select>
+							</div>
+							<div class="modal__upload">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.9995 7.49951L7.18934 15.4393C6.90804 15.7206 6.75 16.1021 6.75 16.5C6.75 16.8978 6.90804 17.2793 7.18934 17.5606C7.47064 17.8419 7.85218 18 8.25 18C8.64783 18 9.02936 17.8419 9.31066 17.5606L18.6208 8.12083C18.8993 7.84226 19.1203 7.51154 19.2711 7.14756C19.4219 6.78359 19.4995 6.39348 19.4995 5.99951C19.4995 5.60555 19.4219 5.21544 19.2711 4.85146C19.1203 4.48748 18.8993 4.15677 18.6208 3.87819C18.3422 3.59962 18.0115 3.37864 17.6475 3.22787C17.2835 3.07711 16.8934 2.99951 16.4995 2.99951C16.1055 2.99951 15.7154 3.07711 15.3514 3.22787C14.9874 3.37864 14.6567 3.59962 14.3781 3.87819L5.06802 13.318C4.22411 14.1619 3.75 15.3065 3.75 16.5C3.75 17.6934 4.22411 18.838 5.06802 19.682C5.91193 20.5259 7.05653 21 8.25 21C9.44348 21 10.5881 20.5259 11.432 19.682L19.1245 11.9995" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<input class="modal__input-upload" type="file" name="dannie">
+								Прикрепить исходные данные
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer justify-content-start border-0">
+						<div class="button">
+							Отправить запрос
+						</div>
+					</div>
+				</div>
+		  </div>
+		</div>
+
 		<div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=a5vAiGQ9fvw',containment:'.video',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
 		<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
