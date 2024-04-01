@@ -33,6 +33,9 @@
 	.question-card__title {
 		white-space: unset;
 	}
+	.process__slider__slide, .types__slider__slide {
+		padding: 10px;
+	}
 }
 @media (max-width: 1200px) {
 	.header__buttons-wrapper {
@@ -73,6 +76,7 @@
 	.power .title {
 	margin-bottom: 75px;
 	}
+
 }
 @media (max-width: 992px) {
 	.video__title {
@@ -203,6 +207,9 @@
 	.video {
 		padding: 100px 0 100px;
 	}
+	.product-main__text, .product-main__product-title {
+		margin-top: 20px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -295,6 +302,15 @@
 		line-height: 17px;
 		margin: 5px 0;
 	}
+	.product-main {
+		padding-bottom: 15px;
+	}
+	.types {
+		padding-top: 15px;
+	}
+	.process__slider, .types__slider {
+		margin-top: 15px;
+	}
 }
 
 @media (max-width: 470px) {
@@ -302,5 +318,12 @@
 		flex-direction: column;
 		row-gap: 5px;
 	}
+	.blog__slider__slide__card__title {
+		font-size: 21px;
+	}
+	.contacts__card__text br:first-child {
+		display: unset;
+	}
+
 
 }

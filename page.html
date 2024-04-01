@@ -1,319 +1,341 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/slick.css">
-		<link rel="icon" href="src/icon/favicon.ico" type="image/x-icon">
-		<link href="css/jquery.fancybox.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
-		<title>
-			Проектируем и производим пресс-формы - Prof-nn
-		</title>
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="icon" href="src/icon/favicon.ico" type="image/x-icon">
+        <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+        <title>
+            Проектируем и производим пресс-формы - Prof-nn
+        </title>
+    </head>
 
-	<body>
-		<header>
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-4">
-						<div class="header__logo-area">
-							<div class="header__logo-area__logo-wrapper">
-								<a href="/">
-									<img src="src/images/header__logo.svg" alt="Prof-nn">
+    <body>
+        <header>
+            <div class="container">
+                <div class="row justify-content-between align-items-center flex-nowrap">
+                    <div class="col-md-4 col-sm-5 col-auto">
+                        <div class="header__logo-area">
+                            <div class="header__logo-area__logo-wrapper">
+                                <a href="/">
+                                    <img src="src/images/header__logo.svg" alt="Prof-nn">
+                                </a>
+                            </div>
+                            <div class="header__logo-area__text">
+                                C 2010 года проектируем и производим
+                                <br> пресс-формы и штампы любой сложности
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-auto">
+                        <div class="header__contacts-wrapper">
+                            <div class="header__contacts-wrapper__socials">
+                                <a href="https://telegram.org/" target="_blank">
+                                    <img src="src/images/telegram.svg" alt="telegram">
+                                </a>
+                                <a href="https://web.whatsapp.com/" target="_blank">
+                                    <img src="src/images/whatsapp.svg" alt="whatsapp">
+                                </a>
+                            </div>
+                            <div class="header__phone-email-wrap">
+                                <a href="tel:+78312822427" class="header__phone" target="_blank">
+									+7(831) 282-24-27
 								</a>
-							</div>
-							<div class="header__logo-area__text">
-								C 2010 года проектируем и производим
-								<br> пресс-формы и штампы любой сложности
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="header__contacts-wrapper">
-							<div class="header__contacts-wrapper__socials">
-								<a href="https://telegram.org/" target="_blank">
-									<img src="src/images/telegram.svg" alt="telegram">
+                                <a href="mailto:info@profnn.info" class="header__email" target="_blank">
+									info@profnn.info
 								</a>
-								<a href="https://web.whatsapp.com/" target="_blank">
-									<img src="src/images/whatsapp.svg" alt="whatsapp">
-								</a>
-							</div>
-							<a href="tel:+78312822427" class="header__phone" target="_blank">
-								+7(831) 282-24-27
-							</a>
-							<a href="mailto:info@profnn.info" class="header__email" target="_blank">
-								info@profnn.info
-							</a>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="header__buttons-wrapper">
-							<div class="header__button">
-								Пригласить в тендер
-							</div>
-							<div class="header__button header__button_black">
-								Заполнить лист запроса
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="row justify-content-between align-items-center">
-					<div class="col-12 ">
-						<ul class="header__menu">
-							<li class="header__menu__item">
-								<a href="#about">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 d-none d-md-block">
+                        <div class="header__buttons-wrapper">
+                            <div class="header__button">
+                                Пригласить в тендер
+                            </div>
+                            <div data-bs-toggle="modal" data-bs-target="#callback" class="header__button header__button_black">
+                                Заполнить лист запроса
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-md-none me-3">
+                        <div class="burger-button">
+                            <span class="burger-button__line"> </span>
+                            <span class="burger-button__line"> </span>
+                            <span class="burger-button__line"> </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12">
+                        <ul class="header__menu">
+                            <li class="header__menu__item">
+                                <a href="#about">
 									О компании
 								</a>
-							</li>
-							<li class="header__menu__item">
-								<a href="#services">
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="page.html">
 									Услуги
 								</a>
-							</li>
-							<li class="header__menu__item">
-								<a href="#">
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#">
 									Оборудование
 								</a>
-							</li>
-							<li class="header__menu__item">
-								<a href="#equipment">
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#equipment">
 									Галерея
 								</a>
-							</li>
-							<li class="header__menu__item">
-								<a href="#contacts">
+                            </li>
+                            <li class="header__menu__item">
+                                <a href="#contacts">
 									Контакты
 								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main>
-			<section class="product-main">
-				<div class="container">
-					<div class="bread-crumbs pt-3">
-						bread / crumbs / bread / crumbs <!-- Нужен пхп для плагина -->
-					</div>
-					<div class="row my-5">
-						<div class="col-12 col-md-5">
-							<div class="product-main__title">
-								Токарный обрабатывающий<br> центр счисловым программным<br> управлением MAZAK
-							</div>
-						</div>
-						<div class="col-12 col-md-7">
-							<div class="product-main__text">
-								Токарные центры с ЧПУ мирового класса объединяют в себе передовые<br> технологии, высокую производительность и качество, отвечающие нуждам<br> абсолютно любого заказчика. Широкое разнообразие доступных технических<br> характеристик — от 2-х осевых моделей до токарных центров с ЧПУ оборудованных<br> вторым шпинделем и шпинделем вращающегося инструмента позволяют<br> осуществить обработку детали за один установ. Подходят для работы<br> как в массовом, так и в мелкосерийном производстве. Все станки обладают<br> эргономичным дизайном для удобной работы.
-							</div>
-						</div>
-					</div>
-					<div class="product-main__card-wrapper">
-						<div class="row">
-							<div class="col-12 col-md-5">
-								<img src="src/images/stanok1.png" alt="">
-							</div>
-							<div class="col-12 col-md-5">
-								<div class="product-main__product-title">
-									Токарный центр QUICK TURN 100M SG
-								</div>
-								<div class="product-main__product-subtitle">
-									Технические характеристики:
-								</div>
-								<div class="product-main__product-list">
-									<ul>
-										<li>Максимальный обрабатываемый диаметр, мм 280</li>
-										<li>Максимальная обрабатываемая длина, мм 430</li>
-										<li>Мощность шпинделя, кВт 11</li>
-										<li>Скорость шпинделя, об/мин 6000</li>
-										<li>Перемещение по оси X, мм 190</li>
-										<li>Перемещение по оси Z, мм 515</li>
-										<li>Количество инструмента 12</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="product-main__card-wrapper">
-						<div class="row">
-							<div class="col-12 col-md-5">
-								<img src="src/images/stanok2.png" alt="">
-							</div>
-							<div class="col-12 col-md-5">
-								<div class="product-main__product-title">
-									VCN-530C Smooth large
-								</div>
-								<div class="product-main__product-subtitle">
-									Технические характеристики:
-								</div>
-								<div class="product-main__product-list">
-									<ul>
-										<li>Максимальный обрабатываемый диаметр, мм 280</li>
-										<li>Максимальная обрабатываемая длина, мм 430</li>
-										<li>Мощность шпинделя, кВт 11</li>
-										<li>Скорость шпинделя, об/мин 6000</li>
-										<li>Перемещение по оси X, мм 190</li>
-										<li>Перемещение по оси Z, мм 515</li>
-										<li>Количество инструмента 12</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="process">
-				<div class="container">
-					<h1 class="title">процесс изготовления</h1>
-					<div class="process__slider">
-						<div class="process__slider__slide">
-							<a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
-								<div class="process__slider__slide__prew-wrapper">
-									<img src="src/images/proc (1).png" alt="">
-								</div>
-							</a>
-						</div>
-						<div class="process__slider__slide">
-							<a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
-								<div class="process__slider__slide__prew-wrapper">
-									<img src="src/images/proc (2).png" alt="">
-								</div>
-							</a>
-						</div>
-						<div class="process__slider__slide">
-							<a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
-								<div class="process__slider__slide__prew-wrapper">
-									<img src="src/images/proc (3).png" alt="">
-								</div>
-							</a>
-						</div>
-						<div class="process__slider__slide">
-							<a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
-								<div class="process__slider__slide__prew-wrapper">
-									<img src="src/images/proc (2).png" alt="">
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="types">
-				<div class="container">
-					<h1 class="title">Виды работ</h1>
-					<div class="types__slider">
-						<div class="types__slider__slide">
-							<img src="src/images/types.png" alt="">
-						</div>
-						<div class="types__slider__slide">
-							<img src="src/images/types.png" alt="">
-						</div>
-						<div class="types__slider__slide">
-							<img src="src/images/types.png" alt="">
-						</div>
-						<div class="types__slider__slide">
-							<img src="src/images/types.png" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-3">
-						<div class="footer__logo-wrapper">
-							<a href="/">
-								<img src="src/images/footer_logo.svg" alt="">
-							</a>
-						</div>
-						<a href="policy.html" class="footer-text footer-text_grey d-block mt-4">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="product-main">
+                <div class="container">
+                    <div class="bread-crumbs pt-3">
+                        Главная / Оборудование / MAZAK
+                        <!-- Нужен пхп для плагина -->
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-12 col-md-5">
+                            <div class="product-main__title">
+                                Токарный обрабатывающий
+                                <br> центр счисловым программным
+                                <br> управлением MAZAK
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="product-main__text">
+                                Токарные центры с ЧПУ мирового класса объединяют в себе передовые
+                                <br> технологии, высокую производительность и качество,
+                                отвечающие нуждам
+                                <br> абсолютно любого заказчика. Широкое разнообразие
+                                доступных технических
+                                <br> характеристик — от 2-х осевых моделей до токарных
+                                центров с ЧПУ оборудованных
+                                <br> вторым шпинделем и шпинделем вращающегося инструмента
+                                позволяют
+                                <br> осуществить обработку детали за один установ. Подходят
+                                для работы
+                                <br> как в массовом, так и в мелкосерийном производстве.
+                                Все станки обладают
+                                <br> эргономичным дизайном для удобной работы.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-main__card-wrapper">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <img src="src/images/stanok1.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="product-main__product-title">
+                                    Токарный центр QUICK TURN 100M SG
+                                </div>
+                                <div class="product-main__product-subtitle">
+                                    Технические характеристики:
+                                </div>
+                                <div class="product-main__product-list">
+                                    <ul>
+                                        <li>Максимальный обрабатываемый диаметр, мм 280</li>
+                                        <li>Максимальная обрабатываемая длина, мм 430</li>
+                                        <li>Мощность шпинделя, кВт 11</li>
+                                        <li>Скорость шпинделя, об/мин 6000</li>
+                                        <li>Перемещение по оси X, мм 190</li>
+                                        <li>Перемещение по оси Z, мм 515</li>
+                                        <li>Количество инструмента 12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-main__card-wrapper">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <img src="src/images/stanok2.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="product-main__product-title">
+                                    VCN-530C Smooth large
+                                </div>
+                                <div class="product-main__product-subtitle">
+                                    Технические характеристики:
+                                </div>
+                                <div class="product-main__product-list">
+                                    <ul>
+                                        <li>Максимальный обрабатываемый диаметр, мм 280</li>
+                                        <li>Максимальная обрабатываемая длина, мм 430</li>
+                                        <li>Мощность шпинделя, кВт 11</li>
+                                        <li>Скорость шпинделя, об/мин 6000</li>
+                                        <li>Перемещение по оси X, мм 190</li>
+                                        <li>Перемещение по оси Z, мм 515</li>
+                                        <li>Количество инструмента 12</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="process">
+                <div class="container">
+                    <h1 class="title">процесс изготовления</h1>
+                    <div class="process__slider">
+                        <div class="process__slider__slide">
+                            <a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
+                                <div class="process__slider__slide__prew-wrapper">
+                                    <img src="src/images/proc (1).png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="process__slider__slide">
+                            <a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
+                                <div class="process__slider__slide__prew-wrapper">
+                                    <img src="src/images/proc (2).png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="process__slider__slide">
+                            <a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
+                                <div class="process__slider__slide__prew-wrapper">
+                                    <img src="src/images/proc (3).png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="process__slider__slide">
+                            <a href="https://www.youtube.com/watch?v=p6ZZ16U-DTs" data-fancybox>
+                                <div class="process__slider__slide__prew-wrapper">
+                                    <img src="src/images/proc (2).png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="types">
+                <div class="container">
+                    <h1 class="title">Виды работ</h1>
+                    <div class="types__slider">
+                        <div class="types__slider__slide">
+                            <img src="src/images/types.png" alt="">
+                        </div>
+                        <div class="types__slider__slide">
+                            <img src="src/images/types.png" alt="">
+                        </div>
+                        <div class="types__slider__slide">
+                            <img src="src/images/types.png" alt="">
+                        </div>
+                        <div class="types__slider__slide">
+                            <img src="src/images/types.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3 col-12 d-flex flex-column align-items-center d-md-block">
+                        <div class="footer__logo-wrapper">
+                            <a href="/">
+                                <img src="src/images/footer_logo.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="policy.html" class="footer-text footer-text_grey d-block mt-3 mt-lg-5">
 							Политика конфиденциальности
 						</a>
-						<a href="policy.html" class="footer-text footer-text_grey d-block">
+                        <a href="policy.html" class="footer-text footer-text_grey d-block mt-3">
 							Договор оферты
 						</a>
-						<div class="footer-text footer-text_grey mt-5">
-							©Все права защищены
-						</div>
-					</div>
-						<div class="col-3">
-							<div class="footer-title">
-								Kлиентам
-							</div>
-							<div class="footer__klientam-list">
-								<ul>
-									<li>
-										<a class="footer-text" href="/">О компании</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Документы</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Партнёры</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Контакты</a>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="footer-title">
-								Услуги
-							</div>
-							<div class="footer__uslugi-list">
-								<ul>
-									<li>
-										<a class="footer-text" href="/">Изготовление пресс-форм</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Изготовление штампов</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Производство деталей</a>
-									</li>
-									<li>
-										<a class="footer-text" href="/">Проекты</a>
-									</li>
-									
-								</ul>
-							</div>
-
-						</div>
-						<div class="col-3">
-							<div class="footer-title">
-								Контакты
-							</div>
-							<div class="footer__adres-wrapper footer-text">
-								603032<br>
-								Нижний новгород,<br> ул. Памирская 11з
-							</div>
-							<div class="footer__phone-wrapper">
-								<a class="footer-text" href="tel:+78312822427" target="_blank">+7 831 282-24-27</a>
-							</div>
-							<div class="footer__email-wrapper">
-								<a class="footer-text" href="mailto:info@profnn.info" target="_blank">info@profnn.info</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</footer>
-		<div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=a5vAiGQ9fvw',containment:'.video',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
-		<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>
-		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-	</body>
+                        <div class="footer-text footer-text_grey mt-3 mt-lg-5">
+                            ©Все права защищены
+                        </div>
+                    </div>
+                    <div class="col-3 d-md-block d-none">
+                        <div class="footer-title">
+                            Kлиентам
+                        </div>
+                        <div class="footer__klientam-list">
+                            <ul>
+                                <li>
+                                    <a class="footer-text" href="/">О компании</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Документы</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Партнёры</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 d-md-block d-none">
+                        <div class="footer-title">
+                            Услуги
+                        </div>
+                        <div class="footer__uslugi-list">
+                            <ul>
+                                <li>
+                                    <a class="footer-text" href="/">Изготовление пресс-форм</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Изготовление штампов</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Производство деталей</a>
+                                </li>
+                                <li>
+                                    <a class="footer-text" href="/">Проекты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 d-md-block d-none">
+                        <div class="footer-title">
+                            Контакты
+                        </div>
+                        <div class="footer__adres-wrapper footer-text">
+                            603032
+                            <br> Нижний новгород,
+                            <br> ул. Памирская 11з
+                        </div>
+                        <div class="footer__phone-wrapper">
+                            <a class="footer-text" href="tel:+78312822427" target="_blank">+7 831 282-24-27</a>
+                        </div>
+                        <div class="footer__email-wrapper">
+                            <a class="footer-text" href="mailto:info@profnn.info" target="_blank">info@profnn.info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=a5vAiGQ9fvw',containment:'.video',autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
+        <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+    </body>
 
 </html>
