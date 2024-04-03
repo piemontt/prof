@@ -8,16 +8,16 @@
 	.question-card__item__number {
 		padding: 0 5px;
 	}
-	.tz-not, 
-	.whatwedo, 
-	.tz-ready, 
-	.press-form, 
-	.consultation, 
-	.consumers, 
-	.power, 
-	.big-manufacture, 
-	.blog, 
-	.contacts, 
+	.tz-not,
+	.whatwedo,
+	.tz-ready,
+	.press-form,
+	.consultation,
+	.consumers,
+	.power,
+	.big-manufacture,
+	.blog,
+	.contacts,
 	footer {
 		padding: 50px 0;
 	}
@@ -33,14 +33,18 @@
 	.question-card__title {
 		white-space: unset;
 	}
-	.process__slider__slide, .types__slider__slide {
+	.process__slider__slide,
+	.types__slider__slide {
 		padding: 10px;
 	}
 }
 @media (max-width: 1200px) {
 	.header__buttons-wrapper {
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		row-gap: 6px;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.button {
@@ -62,8 +66,13 @@
 		font-size: 16px;
 		line-height: 16px;
 	}
-		.header__phone-email-wrap {
+	.header__phone-email-wrap {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		row-gap: 10px;
 	}
@@ -71,12 +80,13 @@
 		row-gap: 10px;
 	}
 	.header__contacts-wrapper {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.power .title {
-	margin-bottom: 75px;
+		margin-bottom: 75px;
 	}
-
 }
 @media (max-width: 992px) {
 	.video__title {
@@ -99,7 +109,8 @@
 		font-size: 13px;
 	}
 	.slick-track {
-		max-height: 213px; /* ??? */
+		max-height: 213px;
+		/* ??? */
 	}
 	.press-form__card__title:not(.press-form__card:first-child.press-form__card__title) {
 		font-size: 20px;
@@ -113,6 +124,8 @@
 		white-space: unset;
 	}
 	.question-card__item {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 }
@@ -126,9 +139,11 @@
 		background: var(--white);
 		z-index: 100;
 		padding: 20px;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
 		transition: all 0.5s;
 	}
-	.header__menu li{
+	.header__menu li {
 		font-size: 26px;
 		line-height: 44px;
 	}
@@ -143,11 +158,12 @@
 	}
 	header {
 		padding: 10px 0;
+		-webkit-box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, 0.08);
 		box-shadow: 0px 11px 12px 0px rgba(0, 0, 0, 0.08);
 	}
 	.active {
-		display: block!important;
-		right: 0!important;
+		display: block !important;
+		right: 0 !important;
 	}
 	.question-card {
 		border-left: unset;
@@ -163,10 +179,37 @@
 		min-height: unset;
 	}
 	.press-form__cards-wrapper {
+		display: -ms-grid;
 		display: grid;
+		-ms-grid-columns: 160px 15px 160px 15px 160px;
 		grid-template-columns: 160px 160px 160px;
+		-ms-grid-rows: 250px 15px 250px;
 		grid-template-rows: 250px 250px;
 		gap: 15px;
+	}
+	.press-form__cards-wrapper>*:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.press-form__cards-wrapper>*:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+	.press-form__cards-wrapper>*:nth-child(3) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 5;
+	}
+	.press-form__cards-wrapper>*:nth-child(4) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+	.press-form__cards-wrapper>*:nth-child(5) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+	.press-form__cards-wrapper>*:nth-child(6) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 5;
 	}
 	.press-form__card {
 		padding: 15px;
@@ -196,9 +239,9 @@
 		padding: 0;
 	}
 	.contacts__card {
-    	padding: 30px 0px;
+		padding: 30px 0px;
 	}
-	.contacts__card br { 
+	.contacts__card br {
 		display: none;
 	}
 	.blog__subtitle {
@@ -207,11 +250,11 @@
 	.video {
 		padding: 100px 0 100px;
 	}
-	.product-main__text, .product-main__product-title {
+	.product-main__text,
+	.product-main__product-title {
 		margin-top: 20px;
 	}
 }
-
 @media (max-width: 576px) {
 	.header__buttons-wrapper .header__button:nth-child(2) {
 		margin-top: 15px;
@@ -222,7 +265,8 @@
 	.header__phone-email-wrap {
 		margin-top: 15px;
 	}
-	.video__title, .video__card__title {
+	.video__title,
+	.video__card__title {
 		font-size: 30px;
 		line-height: 48px;
 	}
@@ -232,29 +276,42 @@
 	.video__card {
 		min-height: unset;
 	}
-	.whatwedo   .slick-track {
+	.whatwedo .slick-track {
 		max-height: unset;
 	}
 	.whatwedo__slider {
 		margin-top: 10px;
 	}
-	.title, .title_white {
+	.title,
+	.title_white {
 		font-size: 30px;
-		line-height: 48px;	
+		line-height: 48px;
 	}
-	.tz-not, .whatwedo, .tz-ready, .press-form, .consultation, .consumers, .power, .big-manufacture, .blog, .contacts, footer {
+	.tz-not,
+	.whatwedo,
+	.tz-ready,
+	.press-form,
+	.consultation,
+	.consumers,
+	.power,
+	.big-manufacture,
+	.blog,
+	.contacts,
+	footer {
 		padding: 25px 0;
 	}
 	.press-form__cards-wrapper {
+		-ms-grid-columns: 100%;
 		grid-template-columns: 100%;
-		grid-template-rows: 280px 280px 280px 280px 280px ;
+		-ms-grid-rows: 280px 15px 280px 15px 280px 15px 280px 15px 280px;
+		grid-template-rows: 280px 280px 280px 280px 280px;
 		gap: 15px;
 		grid-template-areas:
-		"a" 
-		"b"
-		"c"
-		"d"
-		"e";
+			"a"
+			"b"
+			"c"
+			"d"
+			"e";
 	}
 	.question-card {
 		padding: 20px;
@@ -266,6 +323,9 @@
 		margin-bottom: 30px;
 	}
 	.big-manufacture__pics-wrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 	}
 	.big-manufacture__title_slider {
@@ -278,17 +338,21 @@
 		margin-bottom: 25px;
 	}
 	.slick-initialized .slick-slide {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.consumers__slider__slide {
 		padding: 0;
 		border-right: none;
 	}
-	.slick-current + .whatwedo__slider__slide {
+	.slick-current+.whatwedo__slider__slide {
 		border: none;
 	}
-	 .slick-track {
+	.slick-track {
 		max-height: unset;
 	}
 	.blog__slider .slick-list {
@@ -308,13 +372,16 @@
 	.types {
 		padding-top: 15px;
 	}
-	.process__slider, .types__slider {
+	.process__slider,
+	.types__slider {
 		margin-top: 15px;
 	}
 }
-
 @media (max-width: 470px) {
 	.consultation__messenger__logos {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		row-gap: 5px;
 	}
@@ -324,6 +391,4 @@
 	.contacts__card__text br:first-child {
 		display: unset;
 	}
-
-
 }
