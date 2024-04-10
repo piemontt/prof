@@ -5,7 +5,7 @@
 	.button {
 		padding: 16px 10px;
 	}
-	.question-card__item__number {
+	.question-card__item-number {
 		padding: 0 5px;
 	}
 	.tz-not,
@@ -27,14 +27,14 @@
 	.slick-list {
 		height: unset;
 	}
-	.blog__slider__slide__card {
+	.blog-slide__content-wrap {
 		padding: 10px;
 	}
 	.question-card__title {
 		white-space: unset;
 	}
-	.process__slider__slide,
-	.types__slider__slide {
+	.process-slide,
+	.types-slide {
 		padding: 10px;
 	}
 }
@@ -58,7 +58,7 @@
 	.question-card {
 		padding: 30px;
 	}
-	.power__card {
+	.power-card {
 		font-size: 16px;
 		padding: 20px;
 	}
@@ -79,7 +79,7 @@
 	.header__buttons-wrapper {
 		row-gap: 10px;
 	}
-	.header__contacts-wrapper {
+	.burger-line {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
@@ -89,36 +89,32 @@
 	}
 }
 @media (max-width: 992px) {
-	.video__title {
+	.video-title {
 		font-size: 52px;
 	}
-	.video__card__title {
+	.video__card-title {
 		font-size: 42px;
 	}
-	.video__card__desc {
+	.video__card-desc {
 		font-size: 16px;
 		line-height: 26px;
 	}
 	.title {
 		font-size: 52px;
 	}
-	.whatwedo__slider__slide__card__text {
+	.whatwedo-slider__text {
 		font-size: 12px;
 	}
-	.whatwedo__slider__slide__card__text {
+	.whatwedo-slider__text {
 		font-size: 13px;
 	}
-	.slick-track {
-		max-height: 213px;
-		/* ??? */
-	}
-	.press-form__card__title:not(.press-form__card:first-child.press-form__card__title) {
+	.press-form-card__title:not(.press-form-card:first-child.press-form-card__title) {
 		font-size: 20px;
 	}
-	.tz-not__card__text {
+	.tz-not-card__text {
 		line-height: 22px;
 	}
-	.question-card__item__text {
+	.question-card__item-text {
 		font-size: 16px;
 		line-height: 20px;
 		white-space: unset;
@@ -147,7 +143,8 @@
 		font-size: 26px;
 		line-height: 44px;
 	}
-	.header__logo-area__text {
+	
+	.header__logo-text {
 		display: none;
 	}
 	.header__buttons-wrapper {
@@ -168,17 +165,17 @@
 	.question-card {
 		border-left: unset;
 	}
-	.tz-not__card__title {
+	.tz-not-card__title {
 		font-size: 17px;
 		line-height: 24px;
 	}
-	.tz-not__card__text {
+	.tz-not-card__text {
 		font-size: 16px;
 	}
-	.press-form__card {
+	.press-form-card {
 		min-height: unset;
 	}
-	.press-form__cards-wrapper {
+	.press-form-cards-wrapper {
 		display: -ms-grid;
 		display: grid;
 		-ms-grid-columns: 160px 15px 160px 15px 160px;
@@ -187,61 +184,58 @@
 		grid-template-rows: 250px 250px;
 		gap: 15px;
 	}
-	.press-form__cards-wrapper>*:nth-child(1) {
+	.press-form-cards-wrapper>*:nth-child(1) {
 		-ms-grid-row: 1;
 		-ms-grid-column: 1;
 	}
-	.press-form__cards-wrapper>*:nth-child(2) {
+	.press-form-cards-wrapper>*:nth-child(2) {
 		-ms-grid-row: 1;
 		-ms-grid-column: 3;
 	}
-	.press-form__cards-wrapper>*:nth-child(3) {
+	.press-form-cards-wrapper>*:nth-child(3) {
 		-ms-grid-row: 1;
 		-ms-grid-column: 5;
 	}
-	.press-form__cards-wrapper>*:nth-child(4) {
+	.press-form-cards-wrapper>*:nth-child(4) {
 		-ms-grid-row: 3;
 		-ms-grid-column: 1;
 	}
-	.press-form__cards-wrapper>*:nth-child(5) {
+	.press-form-cards-wrapper>*:nth-child(5) {
 		-ms-grid-row: 3;
 		-ms-grid-column: 3;
 	}
-	.press-form__cards-wrapper>*:nth-child(6) {
+	.press-form-cards-wrapper>*:nth-child(6) {
 		-ms-grid-row: 3;
 		-ms-grid-column: 5;
 	}
-	.press-form__card {
+	.press-form-card {
 		padding: 15px;
 		font-size: 18px;
 	}
 	.title {
 		font-size: 44px;
 	}
-	.blog__slider__slide__card__title {
+	.blog-slide__title {
 		font-size: 16px;
 	}
-	.blog__slider__slide__card__date {
+	.blog-slide__date {
 		font-size: 14px;
 		line-height: 17px;
 		margin: 10px 0;
 	}
-	.contacts__card {
+	.contacts-card {
+		padding: 30px 20px;
 		position: unset;
+		width: auto;
+		margin-bottom: 30px;
 	}
-	.contacts__card__phone-wrapper {
+	.contacts-card__phone-wrapper {
 		font-size: 14px;
-	}
-	.contacts__card {
-		padding: 45px 0px;
 	}
 	.contacts {
 		padding: 0;
 	}
-	.contacts__card {
-		padding: 30px 0px;
-	}
-	.contacts__card br {
+	.contacts-card br {
 		display: none;
 	}
 	.blog__subtitle {
@@ -251,7 +245,7 @@
 		padding: 100px 0 100px;
 	}
 	.product-main__text,
-	.product-main__product-title {
+	.product-card__title {
 		margin-top: 20px;
 	}
 }
@@ -265,8 +259,8 @@
 	.header__phone-email-wrap {
 		margin-top: 15px;
 	}
-	.video__title,
-	.video__card__title {
+	.video-title,
+	.video__card-title {
 		font-size: 30px;
 		line-height: 48px;
 	}
@@ -279,7 +273,7 @@
 	.whatwedo .slick-track {
 		max-height: unset;
 	}
-	.whatwedo__slider {
+	.whatwedo-slider {
 		margin-top: 10px;
 	}
 	.title,
@@ -300,7 +294,7 @@
 	footer {
 		padding: 25px 0;
 	}
-	.press-form__cards-wrapper {
+	.press-form-cards-wrapper {
 		-ms-grid-columns: 100%;
 		grid-template-columns: 100%;
 		-ms-grid-rows: 280px 15px 280px 15px 280px 15px 280px 15px 280px;
@@ -322,7 +316,7 @@
 	.power .title {
 		margin-bottom: 30px;
 	}
-	.big-manufacture__pics-wrapper {
+	.big-manufacture-pics {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-ms-flex-flow: row wrap;
@@ -345,23 +339,23 @@
 		-ms-flex-pack: center;
 		justify-content: center;
 	}
-	.consumers__slider__slide {
+	.consumers-slide {
 		padding: 0;
 		border-right: none;
 	}
-	.slick-current+.whatwedo__slider__slide {
+	.slick-current+.list-zaprosa__text {
 		border: none;
 	}
 	.slick-track {
 		max-height: unset;
 	}
-	.blog__slider .slick-list {
+	.blog-slider .slick-list {
 		height: unset;
 	}
-	.blog__slider__slide__card__title {
+	.blog-slide__title {
 		font-size: 16px;
 	}
-	.blog__slider__slide__card__date {
+	.blog-slide__date {
 		font-size: 14px;
 		line-height: 17px;
 		margin: 5px 0;
@@ -372,23 +366,27 @@
 	.types {
 		padding-top: 15px;
 	}
-	.process__slider,
-	.types__slider {
+	.process-slider,
+	.types-slider {
 		margin-top: 15px;
 	}
 }
 @media (max-width: 470px) {
-	.consultation__messenger__logos {
+	.consultation-messenger__logos {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
 		row-gap: 5px;
 	}
-	.blog__slider__slide__card__title {
+	.blog-slide__title {
 		font-size: 21px;
 	}
-	.contacts__card__text br:first-child {
+	.contacts-card__text br:first-child {
 		display: unset;
+	}
+	.contacts-card {
+		padding: 30px 10px;
+		margin-bottom: 20px;
 	}
 }
