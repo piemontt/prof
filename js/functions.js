@@ -136,7 +136,7 @@ $( document ).ready(function() {
 		byRow: false
 		});
 	$('.tz-not-card').matchHeight();
-	$('.tz-not-card__title').matchHeight();
+	$('.whatwedo-slider__text').matchHeight();
 
 	function toggleBurger() {
 		$('.header__menu,.burger-button').toggleClass('active');

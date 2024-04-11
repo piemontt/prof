@@ -1,4 +1,7 @@
 @media (max-width: 1400px) {
+	.video {
+		padding: 130px 0;
+	}
 	.title {
 		font-size: 54px;
 	}
@@ -38,7 +41,7 @@
 		padding: 10px;
 	}
 }
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
 	.header__buttons-wrapper {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
@@ -143,7 +146,6 @@
 		font-size: 26px;
 		line-height: 44px;
 	}
-	
 	.header__logo-text {
 		display: none;
 	}
@@ -176,6 +178,7 @@
 		min-height: unset;
 	}
 	.press-form-cards-wrapper {
+		margin-top: 50px;
 		display: -ms-grid;
 		display: grid;
 		-ms-grid-columns: 160px 15px 160px 15px 160px;
@@ -326,7 +329,7 @@
 		margin: 50px 0 40px;
 	}
 	.blog__subtitle {
-		margin: 25px 0;
+		margin: 15px 0;
 	}
 	.big-manufacture__desc {
 		margin-bottom: 25px;

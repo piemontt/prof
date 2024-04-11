@@ -53,6 +53,7 @@
 	--dgrey: #646464;
 	--ltgrey: #BABABA;
 	--white: #FFFFFF;
+	--white-transparent: #FFFFFF80;
 }
 body,
 html {
@@ -132,13 +133,14 @@ header {
 	line-height: 16px;
 	white-space: nowrap;
 	color: #393A41;
-	padding-right: 8px;
 }
 .header__phone-email:first-child::before {
-	content: url(src/images/phone.svg);
+	content: url(src/icon/phone.svg);
+	padding-right: 8px;
 }
 .header__phone-email:last-child::before {
-	content: url(src/images/mail.svg);
+	content: url(src/icon/mail.svg);
+	padding-right: 8px;
 }
 .header__buttons-wrapper {
 	display: -webkit-box;
@@ -272,7 +274,6 @@ header {
 	display: -ms-flexbox;
 	display: flex;
 }
-
 .slick-current+.whatwedo-slide {
 	border-left: 1px solid var(--ltgrey);
 	border-right: 1px solid var(--ltgrey);
@@ -393,7 +394,7 @@ header {
 	font-size: 18px;
 	line-height: 18px;
 	padding-top: 20px;
-	border-top: 1px solid #FFFFFF80;
+	border-top: 1px solid var(--white-transparent);
 	color: var(--white);
 }
 .press-form {
@@ -430,13 +431,16 @@ header {
 	font-size: 18px;
 	line-height: 18px;
 	padding-top: 20px;
-	border-top: 1px solid #FFFFFF80;
+	border-top: 1px solid var(--white-transparent);
 	color: var(--white);
 }
 .press-form-cards-wrapper {
 	margin-top: 75px;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 15px 1fr 15px 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
+	-ms-grid-rows: 287px 15px 287px;
 	grid-template-rows: 287px 287px;
 	gap: 15px;
 	grid-template-areas:
@@ -627,7 +631,9 @@ header {
 .power-photos {
 	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 10px 1fr;
 	grid-template-columns: 1fr 1fr;
+	-ms-grid-rows: 1fr 10px 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 10px;
 	grid-template-areas:
@@ -651,13 +657,13 @@ header {
 	border-radius: 15px;
 }
 .power-card::after {
-	content: url(src/images/arrow3.svg);
+	content: url(src/icon/arrow3.svg);
 	position: absolute;
 	top: 15px;
 	right: 15px;
 }
 .power-card:first-child::after {
-	content: url(src/images/arrow.svg);
+	content: url(src/icon/arrow.svg);
 	position: absolute;
 	top: 15px;
 	right: 15px;
@@ -668,12 +674,14 @@ header {
 	border: none;
 }
 .power-card:hover::after {
-	content: url(src/images/arrow2.svg);
+	content: url(src/icon/arrow2.svg);
 }
 .power-photos {
 	display: -ms-grid;
 	display: grid;
+	-ms-grid-rows: 1fr 10px 1fr;
 	grid-template-rows: 1fr 1fr;
+	-ms-grid-columns: 1fr 10px 1fr;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 		"a b"
@@ -715,7 +723,7 @@ header {
 	position: relative;
 }
 .big-manufacture-video-wrapper::before {
-	content: url(src/images/play.svg);
+	content: url(src/icon/play.svg);
 	position: absolute;
 	z-index: 15;
 	padding: 20px 20px 15px 25px;
@@ -811,6 +819,7 @@ header {
 	margin: 20px 0;
 }
 .blog-slide__title {
+	display: block;
 	font-size: 24px;
 	line-height: 28px;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -824,7 +833,8 @@ header {
 	padding-top: 100px;
 }
 .contacts-card {
-	background: var(--white);;
+	background: var(--white);
+	;
 	padding: 45px 30px;
 	width: 425px;
 	position: absolute;
@@ -879,10 +889,11 @@ footer {
 .footer-text {
 	font-size: 18px;
 	line-height: 18px;
-	color: var(--white);;
+	color: var(--white);
+	;
 }
 .footer-text_grey {
-	color: #FFFFFF80;
+	color: var(--white-transparent);
 }
 .footer__klientam-list ul,
 .footer__uslugi-list ul {
@@ -968,7 +979,7 @@ footer {
 	position: relative;
 }
 .process-slide__pic-wrapper::before {
-	content: url(src/images/play.svg);
+	content: url(src/icon/play.svg);
 	position: absolute;
 	z-index: 15;
 	padding: 20px 20px 15px 25px;
@@ -998,7 +1009,7 @@ footer {
 	cursor: pointer;
 }
 .form-check-input:checked {
-	background-image: url(src/images/check.svg);
+	background-image: url(src/icon/check.svg);
 }
 .header__phone-email-wrap {
 	display: -webkit-box;
@@ -1097,7 +1108,18 @@ footer {
 .modal__uploaded-list svg {
 	margin-right: 5px;
 }
+.form-control::-webkit-input-placeholder {
+	color: var(--ltgrey);
+}
+.form-control::-moz-placeholder {
+	color: var(--ltgrey);
+}
+.form-control:-ms-input-placeholder {
+	color: var(--ltgrey);
+}
+.form-control::-ms-input-placeholder {
+	color: var(--ltgrey);
+}
 .form-control::placeholder {
 	color: var(--ltgrey);
 }
-
