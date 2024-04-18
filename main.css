@@ -259,21 +259,13 @@ header {
 	right: 10px;
 }
 .whatwedo-slider__slide {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 20px 30px;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 .whatwedo .slick-current+.slick-slide {
-	border-left: 1px solid var(--ltgrey);
-	border-right: 1px solid var(--ltgrey);
+	box-shadow: inset -1px 0px 0px 0px rgba(186, 186, 186, 1), inset 1px 0px 0px 0px rgba(186, 186, 186, 1);
 }
 .whatwedo-slider__text {
 	margin-bottom: 15px;
@@ -638,7 +630,13 @@ header {
 		"a b"
 		"c d";
 }
+.nav-tabs {
+	border: none;
+}
 .power-card {
+	width: 100%;
+}
+.power-card div {
 	padding: 25px;
 	font-size: 24px;
 	line-height: 28px;
@@ -650,30 +648,37 @@ header {
 	transition: background, border-radius 0.2s;
 	width: 100%;
 }
-.power-card:first-child {
-	color: var(--white);
-	background: var(--black);
-	border-radius: 15px;
-}
-.power-card::after {
+
+.power-card div:not(.power-card div.active)::after {
 	content: url(src/icon/arrow3.svg);
 	position: absolute;
 	top: 15px;
 	right: 15px;
 }
-.power-card:first-child::after {
-	content: url(src/icon/arrow.svg);
-	position: absolute;
-	top: 15px;
-	right: 15px;
-}
-.power-card:not(.power-card:first-child):hover {
+.power-card div:not(.power-card div.active):hover {
 	border-radius: 15px;
 	background: #0000000D;
 	border: none;
 }
-.power-card:hover::after {
+.power-card div:not(.power-card div.active):hover::after{
 	content: url(src/icon/arrow2.svg);
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.power-card div.active {
+	color: var(--white);
+	background: var(--black);
+	border-radius: 15px;
+	padding: 25px;
+	border: none;
+}
+.power-card div.active::after {
+	content: url(src/icon/arrow4.svg);
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }
 .power-photos {
 	display: -ms-grid;
@@ -1047,6 +1052,7 @@ footer {
 	-o-transition: 0.2s all;
 	transition: 0.2s all;
 }
+
 .active .burger-line:first-child {
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -1060,9 +1066,6 @@ footer {
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	top: -12px;
-}
-.whatwedo .slick-list {
-	max-height: 324px;
 }
 .header-padding {
 	padding: 11.5px 0;

@@ -1,16 +1,24 @@
+let isMobile = false;
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	isMobile = true
+}
+
 $( document ).ready(function() {
-	
-	$(window).on('load resize', function() {
-		switch (true) {
-			case $(this).width() < 768:
-				$('iframe').attr('height','400');
-			case $(this).width() < 576:
-				$('.header__buttons-wrapper').appendTo($('.header__menu'));
-				$('.header__contacts').appendTo($('.header__menu'));
-			case $(this).width() < 470:
-				$('iframe').attr('height','300');
-		}
-	} );
+
+	if ( $(window).width() < 768 && isMobile ) {
+		$('iframe').attr('height','400')
+		$('.header__contacts').appendTo($('.header__menu'))
+		$('.header__buttons-wrapper').appendTo($('.header__menu'));
+	}
+	else if ( $(window).width() < 752 && !isMobile ) {
+		$('iframe').attr('height','400');
+		$('.header__contacts').appendTo($('.header__menu'));
+		$('.header__buttons-wrapper').appendTo($('.header__menu'));
+	}
+	else if ( $(window).width() <= 470 ) {
+		$('iframe').attr('height','300');
+	}
 
 	$('.whatwedo-slider').slick({
 		slidesToShow: 3,
@@ -22,8 +30,8 @@ $( document ).ready(function() {
 		{
 			breakpoint: 768,
 			settings: {
-			arrows: false,
-			slidesToScroll: 3,
+				slidesToShow: 3,
+				arrows: false,
 			}
 		},
 		{

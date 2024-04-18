@@ -20,9 +20,11 @@
 	.power,
 	.manufacture,
 	.blog,
-	.contacts,
 	footer {
-		padding: 30px 0;
+		padding: 65px 0;
+	}
+	.contacts {
+		padding: 70px 0;
 	}
 	.quality {
 		padding: 150px 0;
@@ -48,7 +50,13 @@
 		line-height: 68px;
 	}
 }
-@media (max-width: 1230px) {
+@media (max-width: 1200px) {
+	.video {
+		padding: 130px 0 50px;
+	}
+	header {
+		padding-top: 10px;
+	}
 	.video-title {
 		font-size: 56px;
 		line-height: 56px;
@@ -111,6 +119,15 @@
 	.title {
 		font-size: 48px;
 	}
+	.quality {
+		padding: 75px 0;
+	}
+	.blog__subtitle {
+		margin: 20px 0 50px;
+	}
+	.header__logo-text {
+		display: none;
+	}
 }
 @media (max-width: 992px) {
 	.video-title {
@@ -156,9 +173,6 @@
 	.footer__text_grey {
 		margin-top: 10px;
 	}
-	.whatwedo .slick-list {
-		max-height: 235px;
-	}
 	.production__cards-wrapper {
 		margin-top: 35px;
 	}
@@ -168,15 +182,18 @@
 	.tz-not-card {
 		padding: 20px;
 	}
+	.whatwedo-slider__slide {
+		padding: 5px 10px;
+	}
 }
 @media (max-width: 768px) {
-	.whatwedo .slick-list {
-		max-height: 220px;
-	}
 	.video-title,
 	.video-card__title {
-		font-size: 36px;
+		font-size: 44px;
 		line-height: 46px;
+	}
+	.title {
+		font-size: 40px;
 	}
 	.video__card {
 		min-height: 140px;
@@ -194,13 +211,12 @@
 		-webkit-transition: all 0.5s;
 		-o-transition: all 0.5s;
 		transition: all 0.5s;
+		visibility: hidden;
+		display: block;
 	}
 	.header__menu li {
 		font-size: 26px;
 		line-height: 44px;
-	}
-	.header__logo-text {
-		display: none;
 	}
 	.header__buttons-wrapper {
 		row-gap: 0px;
@@ -216,6 +232,7 @@
 	.active {
 		display: block !important;
 		right: 0 !important;
+		visibility: visible;
 	}
 	.question-card {
 		border-left: unset;
@@ -241,8 +258,8 @@
 	}
 	.production__card-text {
 		padding-top: 10px;
-		font-size: 13px;
-		line-height: 16px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 	.production__cards-wrapper {
 		margin-top: 20px;
@@ -302,9 +319,6 @@
 		-ms-grid-row: 3;
 		-ms-grid-column: 5;
 	}
-	.title {
-		font-size: 44px;
-	}
 	.blog-slide__title {
 		font-size: 16px;
 	}
@@ -338,7 +352,8 @@
 	.product-card__title {
 		margin-top: 20px;
 	}
-	.header__buttons-wrapper .header__button:nth-child(2) {
+	.header__buttons-wrapper,
+	.header__button:nth-child(2) {
 		margin-top: 15px;
 	}
 	.header__buttons-wrapper .header__button {
@@ -361,9 +376,6 @@
 	}
 	.video__card {
 		min-height: unset;
-	}
-	.whatwedo .slick-track {
-		max-height: unset;
 	}
 	.whatwedo-slider {
 		margin-top: 10px;
@@ -435,9 +447,6 @@
 	.slick-current+.tz-block__text {
 		border: none;
 	}
-	.slick-track {
-		max-height: unset;
-	}
 	.blog-slider .slick-list {
 		height: unset;
 	}
@@ -469,9 +478,6 @@
 		font-size: 18px;
 		line-height: 20px;
 	}
-	.whatwedo .slick-list {
-		max-height: 300px;
-	}
 }
 @media (max-width: 470px) {
 	.consultation-messenger__logos {
@@ -490,9 +496,6 @@
 	.contacts-card {
 		padding: 30px 10px;
 		margin-bottom: 20px;
-	}
-	.whatwedo .slick-list {
-		max-height: 300px;
 	}
 	.tz-ready .title {
 		margin-bottom: 30px;
@@ -538,7 +541,4 @@
 	}
 }
 @media (max-width: 400px) {
-	.whatwedo .slick-list {
-		max-height: 275px;
-	}
 }
