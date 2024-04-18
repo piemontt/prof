@@ -182,7 +182,9 @@ $( document ).ready(function() {
 	});
 
 	function scrollTo(dest) {
-		$('.header__menu,.burger-button').hasClass('active') ? () => { toggleBurger() } : false;
+		if ($('.header__menu').hasClass('active') && $('.burger-button').hasClass('active')) {
+			toggleBurger()
+		}
 		$('html, body').animate({
 			scrollTop: dest.offset().top
 		}, 1000);
