@@ -1,9 +1,7 @@
 let isMobile = false;
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	isMobile = true
 }
-
 $( document ).ready(function() {
 
 	if ( $(window).width() < 768 && isMobile ) {
@@ -39,6 +37,8 @@ $( document ).ready(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
+				centerMode: true,
+				centerPadding: '20px',
 			}
 		}
 
@@ -55,6 +55,7 @@ $( document ).ready(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
+				centerMode: true,
 			}
 		}
 			],
@@ -76,6 +77,7 @@ $( document ).ready(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
+				centerMode: true,
 			}
 		}
 			],
@@ -105,6 +107,7 @@ $( document ).ready(function() {
 			settings: {
 				slidesToShow: 1,
 				arrows: false,
+				centerMode: true,
 			}
 		}
 			],
@@ -166,7 +169,6 @@ $( document ).ready(function() {
 
 	function toggleBurger() {
 		$('.header__menu,.burger-button').toggleClass('active');
-		$('header').toggleClass('header-padding');
 		$('html,body').toggleClass('body-hidden');
 	};
 
